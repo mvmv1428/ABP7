@@ -7,12 +7,6 @@ export const updateUser = async (req, res) => {
     const id = Number(req.params.id);
     // Obtenemos datos nuevos desde el body
     const { nombre, email, comentario } = req.body;
-    //validar que el nombre exista 
-    if(!nombre){
-        return res.status(400).json({
-            message: "El nombre es obligatorio"
-        })
-    }
     //Buscamos un usuario por ID con findByPk
     const usuarioPorId = await User.findByPk(id);
 

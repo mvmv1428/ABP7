@@ -1,9 +1,12 @@
-//Ruta principal - responde con HTML
-
+// Ruta principal - responde con HTML directamente al navegador
 export const getHome = (req, res) => {
+    // Usamos res.send para mandar el bloque de HTML
     res.send(`
     <html>
-      <head><title>Inicio</title><link rel="stylesheet" href="/styles.css"></head>
+      <head>
+        <title>Inicio</title>
+        <link rel="stylesheet" href="/styles.css">
+      </head>
       <body>
         <h1>Bienvenido a Node & Express Web App</h1>
         <p>Servidor funcionando correctamente</p>
