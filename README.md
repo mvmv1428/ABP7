@@ -71,6 +71,35 @@ npm start       # Producción
 
 ## Comparación ORM vs SQL
 
-```bash
+
 El uso de ORM como Sequelize facilita el desarrollo al abstraer las consultas SQL, permitiendo trabajar con objetos en lugar de escribir queries manuales. Esto reduce errores, mejora la mantenibilidad del código y protege contra vulnerabilidades como SQL Injection. Sin embargo, el SQL manual ofrece mayor control y puede ser más eficiente en consultas complejas. En este proyecto, el ORM permitió implementar rápidamente las operaciones CRUD con menor complejidad.
-```
+
+
+## 📦 Estructura del Proyecto
+
+Se utilizó una arquitectura modular basada en **Node.js + Express + Sequelize (ORM)** para separar responsabilidades y facilitar el mantenimiento y escalabilidad.
+
+**Justificación:**  
+Esta estructura permite mantener el código organizado, desacoplado y fácil de escalar, separando claramente la lógica de negocio, acceso a datos y rutas.
+
+---
+
+## 🔗 Relaciones ORM
+
+- Un **User** tiene muchos **Historial**
+- Un **Historial** pertenece a un **User**
+
+Se implementa usando `hasMany`, `belongsTo` y consultas con `include` para obtener datos relacionados en una sola query.
+
+---
+
+## ✅ Validaciones
+
+- Validación de **campos obligatorios** (`allowNull: false`)
+- Definición de **tipos de datos** en los modelos
+- Validación de **parámetros en rutas** (ej: `id`)
+- Manejo de errores con `try/catch`
+- Uso de **foreign keys** para asegurar integridad relacional
+
+**Justificación:**  
+Las validaciones aseguran consistencia de datos, previenen errores en runtime y garantizan que las relaciones entre tablas se mantengan correctas.
