@@ -50,20 +50,21 @@ La API estará disponible en http://localhost:3000
 - `GET /status` → Estado del servidor
 
 ## Estructura del proyecto
-config/       → Conexión BD
-controllers/  → Lógica
-models/       → User y Historial (relación 1:N)
-routes/       → Rutas
-public/       → Archivos estáticos
-middlewares/  → Logger
+- `config/`       → Conexión BD
+- `controllers/`  → Lógica
+- `models/`       → User y Historial (relación 1:N)
+- `routes/`       → Rutas
+- `public/`       → Archivos estáticos
+- `middlewares/`  → Logger
 
 ## Scripts
 
 ```bash
 npm run dev     # Desarrollo con nodemon
 npm start       # Producción
-Notas
+```
+## Notas
 
-En desarrollo se reinician las tablas (force: true).
-Proyecto listo para presentar.
-Mejoras pendientes: validaciones, errores globales y autenticación.
+- En desarrollo se reinician las tablas (force: true).
+- Proyecto listo para presentar.
+- Mejoras pendientes: validaciones, errores globales y autenticación.
