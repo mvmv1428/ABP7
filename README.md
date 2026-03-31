@@ -104,3 +104,10 @@ Se implementa usando `hasMany`, `belongsTo` y consultas con `include` para obten
 
 **Justificación:**  
 Las validaciones aseguran consistencia de datos, previenen errores en runtime y garantizan que las relaciones entre tablas se mantengan correctas.
+
+
+## Drive
+
+```bash
+https://drive.google.com/drive/folders/134IpvXVCiutyVj-Ut_kbScQeOq2rPAjB?usp=sharing
+```
