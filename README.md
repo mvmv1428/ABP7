@@ -74,6 +74,7 @@ npm start       # Producción
 
 El uso de ORM como Sequelize facilita el desarrollo al abstraer las consultas SQL, permitiendo trabajar con objetos en lugar de escribir queries manuales. Esto reduce errores, mejora la mantenibilidad del código y protege contra vulnerabilidades como SQL Injection. Sin embargo, el SQL manual ofrece mayor control y puede ser más eficiente en consultas complejas. En este proyecto, el ORM permitió implementar rápidamente las operaciones CRUD con menor complejidad.
 
+---
 
 ## 📦 Estructura del Proyecto
 
