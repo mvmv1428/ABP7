@@ -68,3 +68,9 @@ npm start       # Producción
 - En desarrollo se reinician las tablas (force: true).
 - Proyecto listo para presentar.
 - Mejoras pendientes: validaciones, errores globales y autenticación.
+
+## Comparación ORM vs SQL
+
+```bash
+El uso de ORM como Sequelize facilita el desarrollo al abstraer las consultas SQL, permitiendo trabajar con objetos en lugar de escribir queries manuales. Esto reduce errores, mejora la mantenibilidad del código y protege contra vulnerabilidades como SQL Injection. Sin embargo, el SQL manual ofrece mayor control y puede ser más eficiente en consultas complejas. En este proyecto, el ORM permitió implementar rápidamente las operaciones CRUD con menor complejidad.
+```
